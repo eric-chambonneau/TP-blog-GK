@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, .87);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.topbar {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+}
+
+.topbar nav {
+    float: left;
+}
+
+.topbar .social {
+    float: right;
+}
+.topbar nav a {
+    color: #9f9f9f;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 53px;
+
+}
+.topbar nav a:hover, .topbar nav a.active {
+    color: black;
+}
