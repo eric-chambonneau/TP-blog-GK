@@ -45,6 +45,7 @@ body, html {
 .banniere img {
   width: 100%;
   height: auto;
+  
 }
 .main {
   float: left;
@@ -140,4 +141,8 @@ body, html {
 
 .footer {
   clear: both;
+}
+.important {
+  color: blue;
+  font-size: 1.2em;
 }
