@@ -103,6 +103,9 @@ body, html {
 .sidebar-title:first-child {
   margin-top: 0;
 }
+.sidebar li::before {
+  content: "♥";
+}
 .article.img {
   float: left;
   width: 308px;
@@ -145,4 +148,50 @@ body, html {
 .important {
   color: blue;
   font-size: 1.2em;
+}
+::selection {
+  background-color: cyan;
+}
+p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+blockquote::before {
+  content: '"';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 60px;
+  line-height: 1.4rem;
+}
+blockquote::after {
+  content: '"';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 60px;
+  line-height: 1.4rem;
+}
+blockquote {
+  background: rgba(0, 0, 255, 0.6);
+  padding: 10px;
+ position: relative;
+}
+.sidebar ul {
+  counter-reset: sidebarlist;
+}
+.sidebar li::before {
+  counter-increment: sidebarlist;
+  content: counter(sidebarlist)". "
+               
+}
+.sidebar li::after {
+  content: '3';
+  float: right;
+  background: grey;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
 }
